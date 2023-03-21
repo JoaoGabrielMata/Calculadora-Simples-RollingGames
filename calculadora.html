@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Calculadora em Javascript</title>
+	<title>Calculadora em Javascript</title> 
 </head>
-<body>
+<center <text-align:center>
 	<input type="text" id="num1" placeholder="Digite o primeiro número">
 	<input type="text" id="num2" placeholder="Digite o segundo número">
+
+	<p></p> 
 
 	<button onclick="soma()">+</button>
 	<button onclick="subtracao()">-</button>
 	<button onclick="multiplicacao()">*</button>
 	<button onclick="divisao()">/</button>
+	<button onclick="pi()">3.1415</button>
 
 	<p id="resultado"></p>
 
@@ -42,6 +45,12 @@
 			var resultado = num1 / num2;
 			document.getElementById("resultado").innerHTML = resultado;
 		}
-	</script>
-</body>
+
+		function pi(){
+			var num1 = parseFloat(document.getElementById("num1").value);
+			var resultado = num1 * 3.1415;
+			document.getElementById("resultado").innerHTML = resultado;
+		}
+	</script> </center>
+</body> 
 </html>
